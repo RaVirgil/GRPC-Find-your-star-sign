@@ -1,0 +1,2 @@
+obj\Debug\netcoreapp3.1/SeasonSelection.cs \
+obj\Debug\netcoreapp3.1/SeasonSelectionGrpc.cs: Protos/season_selection.proto

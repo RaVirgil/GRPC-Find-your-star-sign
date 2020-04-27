@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+service AutumnSelection{
+	rpc AutumnSignSelection(AutumnRequest) returns (AutumnResponse);
+}
+
+
+message AutumnRequest{
+	string date=1;
+}
+
+message AutumnResponse{
+	string sign=1;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+service WinterSelection{
+	rpc WinterSignSelection(WinterRequest) returns (WinterResponse);
+}
+
+message WinterRequest{
+	string date=1;
+}
+
+message WinterResponse{
+    string sign=1;
+}
+

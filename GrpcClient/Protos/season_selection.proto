@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+service SeasonSelection{
+	rpc GetSeason(SeasonRequest) returns (SeasonResponse);
+}
+
+
+message SeasonRequest{
+    string date=1;
+	
+}
+
+message SeasonResponse{
+	string season=1;
+}

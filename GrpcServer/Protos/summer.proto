@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+service SummerSelection{
+	rpc SummerSignSelection(SummerRequest) returns (SummerResponse);
+}
+
+
+message SummerRequest{
+	string date=1;
+}
+
+message SummerResponse{
+   string sign=1;
+}
